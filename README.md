@@ -2,6 +2,8 @@
 
 Hi! This is a demo project that retrieves data from Apple HealthKit for the past 7 days from the current date.
 
+Android Version - https://github.com/Parithi/StepCounter_Android_Prototype
+
 ## Project Details
  - Written in Swift
  - Built without using storyboards. All views are programatically generated.
@@ -26,7 +28,6 @@ Hi! This is a demo project that retrieves data from Apple HealthKit for the past
 
  - Refactor to MVVM or MVP
  - Add Unit Tests
- - Android version
 
 ## Libraries Used
 
