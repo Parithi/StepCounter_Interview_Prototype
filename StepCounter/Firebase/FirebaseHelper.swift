@@ -23,9 +23,9 @@ class FirebaseHelper {
         db = Firestore.firestore()
     }
     
-    func createUser(user : User) {
+    func createUser(user : User, completion : @escaping () -> Void) {
         FirebaseHelper.shared.getProfileInfoFor(userId: user.uid, useCache: false) { [weak self] profile in
-            guard profile == nil else { return }
+            guard profile == nil else { completion(); return }
             let name = user.email?.components(separatedBy: "@")[0] ?? ""
             let email = user.email ?? ""
             let lastLoggedIn = Int64(Date().timeIntervalSince1970)
@@ -37,6 +37,7 @@ class FirebaseHelper {
             newUser.lastLoggedIn = lastLoggedIn
             
             self?.setProfileData(id: user.uid, profile: newUser)
+            completion()
         }
     }
 

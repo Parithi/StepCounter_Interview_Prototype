@@ -57,8 +57,9 @@ extension AppDelegate : GIDSignInDelegate {
                 return
             }
             if let activeUser = Auth.auth().currentUser {
-                FirebaseHelper.shared.createUser(user: activeUser)
-                NotificationCenter.default.post(name: .didLogin, object: nil)
+                FirebaseHelper.shared.createUser(user: activeUser) {
+                    NotificationCenter.default.post(name: .didLogin, object: nil)
+                }
             }
         }
     }
@@ -104,8 +105,9 @@ extension AppDelegate : ASAuthorizationControllerDelegate {
                     return
                 }
                 if let activeUser = Auth.auth().currentUser {
-                    FirebaseHelper.shared.createUser(user: activeUser)
-                    NotificationCenter.default.post(name: .didLogin, object: nil)
+                    FirebaseHelper.shared.createUser(user: activeUser) {
+                        NotificationCenter.default.post(name: .didLogin, object: nil)
+                    }
                 }
             }
         }
