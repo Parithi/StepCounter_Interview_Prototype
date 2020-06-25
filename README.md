@@ -18,7 +18,7 @@ Hi! This is a demo project that retrieves data from Apple HealthKit for the past
  - User can login using Google / Apple Sign In
  - Allow access to Health Kit
 	 - On success, the step count details for the past 7 days are shown. Current daily step count target is set to 4000. Depending on the percentage of steps completed, different emojis are displayed
-	 - Current day's step is highlighted in a different color and is only shown if any data is available.
+	 - Current day's steps is highlighted in a different color and is only shown if any data is available.
 	 - On failure to access HealthKit, error message is displayed
  - User can logout by clicking on the profile picture on the top right
 
