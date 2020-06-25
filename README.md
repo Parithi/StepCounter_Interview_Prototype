@@ -17,11 +17,11 @@ Android Version - https://github.com/Parithi/StepCounter_Android_Prototype
 
 ## App Flow
 
- - User can login using Google / Apple Sign In
- - Allow access to Health Kit
-	 - On success, the step count details for the past 7 days are shown. Current daily step count target is set to 4000. Depending on the percentage of steps completed, different emojis are displayed
-	 - Current day's steps is highlighted in a different color and is only shown if any data is available.
-	 - On failure to access HealthKit, error message is displayed
+ - User can log in using Apple & Google Sign In
+ - Allow access to Apple HealthKit
+     - On success, the step count details for the past 7 days are shown. Current daily step count target is set to 4000. Depending on the percentage of steps completed, different emojis are displayed
+     - Current day's steps are highlighted in a different colour and are only shown if any data is available.
+     - On failure to access HealthKit, the error message is displayed
  - User can logout by clicking on the profile picture on the top right
 
 ## To-Dos
