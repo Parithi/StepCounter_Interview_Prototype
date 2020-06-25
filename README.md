@@ -1,6 +1,6 @@
 # StepCounter - Prototype (iOS)
 
-Hi! This is a demo project that retreives data from Apple HealthKit for the past 7 days from current date.
+Hi! This is a demo project that retrieves data from Apple HealthKit for the past 7 days from the current date.
 
 ## Project Details
  - Written in Swift
