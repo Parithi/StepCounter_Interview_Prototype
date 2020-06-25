@@ -15,10 +15,10 @@ Hi! This is a demo project that retreives data from Apple HealthKit for the past
 
 ## App Flow
 
- - User Login using Google / Apple Sign In
+ - User can login using Google / Apple Sign In
  - Allow access to Health Kit
-	 - On success, the step count details for the past 7 days are shown. Current daily step count target is set to 4000. Depending on the percentage of steps completed, different emojis are displayed.
-	 - On failure to access HealthKit, error message is displayed.
+	 - On success, the step count details for the past 7 days are shown. Current daily step count target is set to 4000. Depending on the percentage of steps completed, different emojis are displayed
+	 - On failure to access HealthKit, error message is displayed
  - User can logout by clicking on the profile picture on the top right
 
 ## To-Dos
