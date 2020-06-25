@@ -1,4 +1,4 @@
-# StepCounter - Prototype
+# StepCounter - Prototype (iOS)
 
 Hi! This is a demo project that retreives data from Apple HealthKit for the past 7 days from current date.
 
@@ -25,6 +25,7 @@ Hi! This is a demo project that retreives data from Apple HealthKit for the past
 
  - Refactor to MVVM or MVP
  - Add Unit Tests
+ - Android version
 
 ## Libraries Used
 
