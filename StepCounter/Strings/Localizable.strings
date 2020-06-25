@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  StepCounter
+
+  Created by ElamParithi Arul on 2020-06-23.
+  Copyright © 2020 Parithi Network. All rights reserved.
+*/
+
+"app_name" = "Step Counter";
+"sign_in_with_google" = "Sign in with Google";
+"sign_in_with_apple" = "Sign in with Apple";
+"submit" = "Submit";
+"unable_to_get_data" = "Unable to receive data from HealthKit.\nPlease allow access to your Health Data from the settings";
+"salutation_label" = "Hello, %@!";
+
+"logout_label" = "Logout";
+"logout_message" = "Do you wish to logout?";
+"cancel_label" = "Cancel";
+

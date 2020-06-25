@@ -3,18 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38673A7D962D0B33AD4C0CB0 /* Pods_StepCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95299A459D296553BF69A652 /* Pods_StepCounter.framework */; };
+		61D4EDDF922B5E8CFDB0012A /* Pods_StepCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E589FF3D36C51BBC1E6070D /* Pods_StepCounterTests.framework */; };
 		7263840924A2D77F00064794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263840824A2D77F00064794 /* AppDelegate.swift */; };
 		7263840B24A2D77F00064794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263840A24A2D77F00064794 /* SceneDelegate.swift */; };
-		7263840D24A2D77F00064794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263840C24A2D77F00064794 /* ViewController.swift */; };
-		7263841024A2D77F00064794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7263840E24A2D77F00064794 /* Main.storyboard */; };
+		7263840D24A2D77F00064794 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263840C24A2D77F00064794 /* LoginViewController.swift */; };
 		7263841224A2D78000064794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7263841124A2D78000064794 /* Assets.xcassets */; };
 		7263841524A2D78000064794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7263841324A2D78000064794 /* LaunchScreen.storyboard */; };
 		7263842024A2D78100064794 /* StepCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263841F24A2D78100064794 /* StepCounterTests.swift */; };
 		7263842B24A2D78100064794 /* StepCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263842A24A2D78100064794 /* StepCounterUITests.swift */; };
+		7263843A24A2D93E00064794 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7263843924A2D93E00064794 /* GoogleService-Info.plist */; };
+		729868D624A2DB00001C70FE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729868D524A2DB00001C70FE /* HealthKit.framework */; };
+		729868D924A2DC26001C70FE /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868D824A2DC26001C70FE /* HealthKitHelper.swift */; };
+		729868DE24A2E1DA001C70FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868DD24A2E1DA001C70FE /* Extensions.swift */; };
+		729868E024A2E285001C70FE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868DF24A2E285001C70FE /* Colors.swift */; };
+		729868E224A2E2C9001C70FE /* AppleSignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868E124A2E2C9001C70FE /* AppleSignInHelper.swift */; };
+		729868E424A2E2F2001C70FE /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868E324A2E2F2001C70FE /* FirebaseConstants.swift */; };
+		729868E624A2E33F001C70FE /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868E524A2E33F001C70FE /* FirebaseHelper.swift */; };
+		729868E824A2E4F4001C70FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868E724A2E4F4001C70FE /* Notifications.swift */; };
+		729868EA24A2E50E001C70FE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868E924A2E50E001C70FE /* DashboardViewController.swift */; };
+		729868ED24A2E54F001C70FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 729868EC24A2E54F001C70FE /* Localizable.strings */; };
+		729868EF24A40E25001C70FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868EE24A40E25001C70FE /* Constants.swift */; };
+		729868F224A426D2001C70FE /* StepCountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868F124A426D2001C70FE /* StepCountTableViewCell.swift */; };
+		729868F524A44182001C70FE /* StepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729868F424A44182001C70FE /* StepData.swift */; };
+		8EC1EA53BE11DDB1BF3C0A17 /* Pods_StepCounter_StepCounterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1592756B012C5A9688D39E37 /* Pods_StepCounter_StepCounterUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1279A4D4CCD8B2D88C26B265 /* Pods-StepCounter-StepCounterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCounter-StepCounterUITests.release.xcconfig"; path = "Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1592756B012C5A9688D39E37 /* Pods_StepCounter_StepCounterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCounter_StepCounterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E6BA40032BF710FCE9A34B /* Pods-StepCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCounter.release.xcconfig"; path = "Target Support Files/Pods-StepCounter/Pods-StepCounter.release.xcconfig"; sourceTree = "<group>"; };
+		3A8A2885A8190ACA09A0A108 /* Pods-StepCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCounterTests.release.xcconfig"; path = "Target Support Files/Pods-StepCounterTests/Pods-StepCounterTests.release.xcconfig"; sourceTree = "<group>"; };
+		62E79AE3F8987BDFF2992475 /* Pods-StepCounter-StepCounterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCounter-StepCounterUITests.debug.xcconfig"; path = "Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DABDC9A3F6E00E35131D4ED /* Pods-StepCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCounterTests.debug.xcconfig"; path = "Target Support Files/Pods-StepCounterTests/Pods-StepCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7263840524A2D77F00064794 /* StepCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7263840824A2D77F00064794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7263840A24A2D77F00064794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7263840C24A2D77F00064794 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7263840F24A2D77F00064794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7263840C24A2D77F00064794 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7263841124A2D78000064794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7263841424A2D78000064794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7263841624A2D78000064794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +70,24 @@
 		7263842624A2D78100064794 /* StepCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7263842A24A2D78100064794 /* StepCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterUITests.swift; sourceTree = "<group>"; };
 		7263842C24A2D78100064794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7263843824A2D79100064794 /* StepCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepCounter.entitlements; sourceTree = "<group>"; };
+		7263843924A2D93E00064794 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		729868D524A2DB00001C70FE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		729868D824A2DC26001C70FE /* HealthKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
+		729868DD24A2E1DA001C70FE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		729868DF24A2E285001C70FE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		729868E124A2E2C9001C70FE /* AppleSignInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInHelper.swift; sourceTree = "<group>"; };
+		729868E324A2E2F2001C70FE /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
+		729868E524A2E33F001C70FE /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		729868E724A2E4F4001C70FE /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		729868E924A2E50E001C70FE /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		729868EC24A2E54F001C70FE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		729868EE24A40E25001C70FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		729868F124A426D2001C70FE /* StepCountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountTableViewCell.swift; sourceTree = "<group>"; };
+		729868F424A44182001C70FE /* StepData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepData.swift; sourceTree = "<group>"; };
+		8E589FF3D36C51BBC1E6070D /* Pods_StepCounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95299A459D296553BF69A652 /* Pods_StepCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1177AE6D824E4B053CAF050 /* Pods-StepCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCounter.debug.xcconfig"; path = "Target Support Files/Pods-StepCounter/Pods-StepCounter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38673A7D962D0B33AD4C0CB0 /* Pods_StepCounter.framework in Frameworks */,
+				729868D624A2DB00001C70FE /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D4EDDF922B5E8CFDB0012A /* Pods_StepCounterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC1EA53BE11DDB1BF3C0A17 /* Pods_StepCounter_StepCounterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2431D5A631FBA7FDB295E9BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				729868D524A2DB00001C70FE /* HealthKit.framework */,
+				95299A459D296553BF69A652 /* Pods_StepCounter.framework */,
+				1592756B012C5A9688D39E37 /* Pods_StepCounter_StepCounterUITests.framework */,
+				8E589FF3D36C51BBC1E6070D /* Pods_StepCounterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FCA1E3D11814BE4B03AD17B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1177AE6D824E4B053CAF050 /* Pods-StepCounter.debug.xcconfig */,
+				19E6BA40032BF710FCE9A34B /* Pods-StepCounter.release.xcconfig */,
+				62E79AE3F8987BDFF2992475 /* Pods-StepCounter-StepCounterUITests.debug.xcconfig */,
+				1279A4D4CCD8B2D88C26B265 /* Pods-StepCounter-StepCounterUITests.release.xcconfig */,
+				6DABDC9A3F6E00E35131D4ED /* Pods-StepCounterTests.debug.xcconfig */,
+				3A8A2885A8190ACA09A0A108 /* Pods-StepCounterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		726383FC24A2D77F00064794 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +150,8 @@
 				7263841E24A2D78100064794 /* StepCounterTests */,
 				7263842924A2D78100064794 /* StepCounterUITests */,
 				7263840624A2D77F00064794 /* Products */,
+				6FCA1E3D11814BE4B03AD17B /* Pods */,
+				2431D5A631FBA7FDB295E9BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +168,14 @@
 		7263840724A2D77F00064794 /* StepCounter */ = {
 			isa = PBXGroup;
 			children = (
-				7263840824A2D77F00064794 /* AppDelegate.swift */,
-				7263840A24A2D77F00064794 /* SceneDelegate.swift */,
-				7263840C24A2D77F00064794 /* ViewController.swift */,
-				7263840E24A2D77F00064794 /* Main.storyboard */,
+				729868F324A44178001C70FE /* Models */,
+				729868F024A426AE001C70FE /* TableViewCells */,
+				729868EB24A2E53E001C70FE /* Strings */,
+				729868D724A2DC05001C70FE /* Utilities */,
+				729868D424A2DA0A001C70FE /* Firebase */,
+				729868D324A2D9F9001C70FE /* ViewControllers */,
+				729868D224A2D9ED001C70FE /* Delegates */,
+				7263843824A2D79100064794 /* StepCounter.entitlements */,
 				7263841124A2D78000064794 /* Assets.xcassets */,
 				7263841324A2D78000064794 /* LaunchScreen.storyboard */,
 				7263841624A2D78000064794 /* Info.plist */,
@@ -128,6 +201,71 @@
 			path = StepCounterUITests;
 			sourceTree = "<group>";
 		};
+		729868D224A2D9ED001C70FE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7263840824A2D77F00064794 /* AppDelegate.swift */,
+				7263840A24A2D77F00064794 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		729868D324A2D9F9001C70FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7263840C24A2D77F00064794 /* LoginViewController.swift */,
+				729868E924A2E50E001C70FE /* DashboardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		729868D424A2DA0A001C70FE /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				7263843924A2D93E00064794 /* GoogleService-Info.plist */,
+				729868E324A2E2F2001C70FE /* FirebaseConstants.swift */,
+				729868E524A2E33F001C70FE /* FirebaseHelper.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		729868D724A2DC05001C70FE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				729868D824A2DC26001C70FE /* HealthKitHelper.swift */,
+				729868DD24A2E1DA001C70FE /* Extensions.swift */,
+				729868DF24A2E285001C70FE /* Colors.swift */,
+				729868E124A2E2C9001C70FE /* AppleSignInHelper.swift */,
+				729868E724A2E4F4001C70FE /* Notifications.swift */,
+				729868EE24A40E25001C70FE /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		729868EB24A2E53E001C70FE /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				729868EC24A2E54F001C70FE /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		729868F024A426AE001C70FE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				729868F124A426D2001C70FE /* StepCountTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		729868F324A44178001C70FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				729868F424A44182001C70FE /* StepData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7263842F24A2D78100064794 /* Build configuration list for PBXNativeTarget "StepCounter" */;
 			buildPhases = (
+				6D56BE744540767A9DF5B7EE /* [CP] Check Pods Manifest.lock */,
 				7263840124A2D77F00064794 /* Sources */,
 				7263840224A2D77F00064794 /* Frameworks */,
 				7263840324A2D77F00064794 /* Resources */,
+				A43798763EF17501BD2FC7A1 /* [CP] Embed Pods Frameworks */,
+				89E21FC6880557E646C3E8F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7263843224A2D78100064794 /* Build configuration list for PBXNativeTarget "StepCounterTests" */;
 			buildPhases = (
+				129875B2DCF5B3C29902CE78 /* [CP] Check Pods Manifest.lock */,
 				7263841724A2D78100064794 /* Sources */,
 				7263841824A2D78100064794 /* Frameworks */,
 				7263841924A2D78100064794 /* Resources */,
@@ -170,9 +312,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7263843524A2D78100064794 /* Build configuration list for PBXNativeTarget "StepCounterUITests" */;
 			buildPhases = (
+				B20A2D746E3D7F927AD70A8B /* [CP] Check Pods Manifest.lock */,
 				7263842224A2D78100064794 /* Sources */,
 				7263842324A2D78100064794 /* Frameworks */,
 				7263842424A2D78100064794 /* Resources */,
+				CD5F9DEE3132F580B81BC767 /* [CP] Embed Pods Frameworks */,
+				BBFD460FEC36F9A6CD884249 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,8 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7263841524A2D78000064794 /* LaunchScreen.storyboard in Resources */,
+				729868ED24A2E54F001C70FE /* Localizable.strings in Resources */,
 				7263841224A2D78000064794 /* Assets.xcassets in Resources */,
-				7263841024A2D77F00064794 /* Main.storyboard in Resources */,
+				7263843A24A2D93E00064794 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +400,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		129875B2DCF5B3C29902CE78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StepCounterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D56BE744540767A9DF5B7EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StepCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E21FC6880557E646C3E8F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter/Pods-StepCounter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter/Pods-StepCounter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StepCounter/Pods-StepCounter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43798763EF17501BD2FC7A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter/Pods-StepCounter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter/Pods-StepCounter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StepCounter/Pods-StepCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B20A2D746E3D7F927AD70A8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StepCounter-StepCounterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFD460FEC36F9A6CD884249 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5F9DEE3132F580B81BC767 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StepCounter-StepCounterUITests/Pods-StepCounter-StepCounterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7263840124A2D77F00064794 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7263840D24A2D77F00064794 /* ViewController.swift in Sources */,
+				7263840D24A2D77F00064794 /* LoginViewController.swift in Sources */,
+				729868F524A44182001C70FE /* StepData.swift in Sources */,
+				729868DE24A2E1DA001C70FE /* Extensions.swift in Sources */,
+				729868E824A2E4F4001C70FE /* Notifications.swift in Sources */,
 				7263840924A2D77F00064794 /* AppDelegate.swift in Sources */,
+				729868E024A2E285001C70FE /* Colors.swift in Sources */,
+				729868E624A2E33F001C70FE /* FirebaseHelper.swift in Sources */,
+				729868E224A2E2C9001C70FE /* AppleSignInHelper.swift in Sources */,
+				729868EA24A2E50E001C70FE /* DashboardViewController.swift in Sources */,
+				729868E424A2E2F2001C70FE /* FirebaseConstants.swift in Sources */,
+				729868F224A426D2001C70FE /* StepCountTableViewCell.swift in Sources */,
+				729868D924A2DC26001C70FE /* HealthKitHelper.swift in Sources */,
 				7263840B24A2D77F00064794 /* SceneDelegate.swift in Sources */,
+				729868EF24A40E25001C70FE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +591,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7263840E24A2D77F00064794 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7263840F24A2D77F00064794 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7263841324A2D78000064794 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,8 +718,10 @@
 		};
 		7263843024A2D78100064794 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1177AE6D824E4B053CAF050 /* Pods-StepCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StepCounter/StepCounter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K94DMEBCWD;
 				INFOPLIST_FILE = StepCounter/Info.plist;
@@ -441,7 +729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parithi.StepCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parithi.stepcounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,8 +738,10 @@
 		};
 		7263843124A2D78100064794 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E6BA40032BF710FCE9A34B /* Pods-StepCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StepCounter/StepCounter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K94DMEBCWD;
 				INFOPLIST_FILE = StepCounter/Info.plist;
@@ -459,7 +749,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parithi.StepCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parithi.stepcounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,6 +758,7 @@
 		};
 		7263843324A2D78100064794 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DABDC9A3F6E00E35131D4ED /* Pods-StepCounterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +781,7 @@
 		};
 		7263843424A2D78100064794 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8A2885A8190ACA09A0A108 /* Pods-StepCounterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +804,7 @@
 		};
 		7263843624A2D78100064794 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E79AE3F8987BDFF2992475 /* Pods-StepCounter-StepCounterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +825,7 @@
 		};
 		7263843724A2D78100064794 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1279A4D4CCD8B2D88C26B265 /* Pods-StepCounter-StepCounterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
